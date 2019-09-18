@@ -5,7 +5,7 @@
 > 실적 발생 시 어떤 회원의 실적인지 실시간으로 데이터를 받을 수 있습니다.
 > 리워드 데이터를 사용하면 회원들에게 가입/구매를 홍보하고, 실적이 발생하면 해당 회원에게 보상해 줄 수 있기 때문에 캐시백 또는 리워드 서비스를 운영하는 어필리에이트에 적합합니다.
 
-![](C:\Users\Linkprice\Pictures\reward_diagram3.png)
+![](https://github.com/linkprice/AffiliateSetup/blob/master/reward_diagram3.png)
 
 1. 배너클릭
 
@@ -74,11 +74,11 @@
 
 - 리워드 승인 신청
 
-    ![](C:\Users\Linkprice\Pictures\reward_request.png)
+    ![](https://github.com/linkprice/AffiliateSetup/blob/master/reward_request.png)
 
 - 실적 발생 시 머천트에서 링크프라이스로 실적을 보내주면, 링크프라이스에서 어필리에이트로 리워드를 전송합니다. 링크프라이스가 전송한 데이터를 받아 처리할 페이지를 개발 되어야 하며, 그 주소를 리워드 승인 후 리워드 API 받을 주소에 저장하셔야 합니다.
     
-![](C:\Users\Linkprice\Pictures\reward_url.png)
+![](https://github.com/linkprice/AffiliateSetup/blob/master/reward_url.png)
     
 - 리워드를 받아 처리하는 페이지의 **타임아웃 시간은 최대 10초**입니다.
 
@@ -88,11 +88,11 @@
 
 - 하단 로그정보 조회 클릭
 
-    ![reward1](C:\Users\Linkprice\Pictures\reward1.png)
+    ![reward1](https://github.com/linkprice/AffiliateSetup/blob/master/reward1.png)
 
 - 상단 필터링 부분을 이용하여 원하는 조건으로 조회
 
-    ![reward2](C:\Users\Linkprice\Pictures\reward2.png)
+    ![reward2](https://github.com/linkprice/AffiliateSetup/blob/master/reward2.png)
 
 - 전송이 실패한 건에 대해서는 재전송이 가능합니다.
     (재전송 시 실적이 중복 될수 있습니다.)
