@@ -167,24 +167,24 @@ curl http://api.linkprice.com/affiliate/translist.php?a_id=yourAffiliateId&auth_
 
   * order_list 상세 명세
 
-| 키            | 값                                                           |
-| ------------- | ------------------------------------------------------------ |
-| trlog_id      | 주문 고유번호(PK)                                            |
-| yyyymmdd      | 주문 일자                                                    |
-| hhmiss        | 주문 시간                                                    |
-| m_id          | 머천트 아이디(AK)                                            |
-| o_cd          | 주문 번호(AK)                                                |
-| p_cd          | 상품 코드(AK)                                                |
-| p_nm          | 상품명                                                       |
-| c_cd          | 카테고리 코드                                                |
-| it_cnt        | 주문 수량                                                    |
-| sales         | 판매 합계금액                                                |
-| commission    | 어필 커미션                                                  |
-| user_id       | 매체 사용자 정보<br/>(click 주소를 통해 u_id로 전달 된 값)   |
-| membership_id | 머천트의 주문자 정보                                         |
-| remote_addr   | 사용자 PC 주소                                               |
-| status        | 주문상태<br/>100 (처리중) <br/>300(처리중) <br/>310(취소완료) /<br/>200(처리중)<br/>210(정산완료) <br/>220(정산완료) |
-| trans_comment | 실적 취소 사유                                               |
+| 키            | 타입           | 값                                                           |
+| ------------- | ----------------------------|------------------------------- |
+| trlog_id      |bigint(20)        | 주문 고유번호(PK)                                            |
+| yyyymmdd      |varchar(10)       | 주문 일자                                                    |
+| hhmiss        |varchar(6)       | 주문 시간                                                    |
+| m_id          |varchar(10)       | 머천트 아이디(AK)                                            |
+| o_cd          |varchar(100)       | 주문 번호(AK)                                                |
+| p_cd          |varchar(100)       | 상품 코드(AK)                                                |
+| p_nm          |varchar(300)       | 상품명                                                       |
+| c_cd          |varchar(200)       | 카테고리 코드                                                |
+| it_cnt        |int(11)           | 주문 수량                                                    |
+| sales         |double      | 판매 합계금액 (KRW)                                               |
+| commission    |double      | 매체에 지급하는 커미션 (KRW)                                                  |
+| user_id       |varchar(560)      | 매체 사용자 정보<br/>(click 주소를 통해 u_id로 전달 된 값)   |
+| membership_id |varchar(100)      | 머천트의 주문자 정보                                         |
+| remote_addr   |varchar(100)      | 사용자 PC 주소                                               |
+| status        |varchar(3)      | 주문상태<br/>100 (처리중) <br/>300(처리중) <br/>310(취소완료) /<br/>200(처리중)<br/>210(정산완료) <br/>220(정산완료) |
+| trans_comment |varchar(1000)      | 실적 취소 사유     
 
 ## 7. <a name="confirm">정산 실적 처리 방벙</a>
 
