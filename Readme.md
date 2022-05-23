@@ -80,7 +80,7 @@
   
 
 ![](https://github.com/linkprice/AffiliateSetup/blob/master/reward_url.png)
-    
+​    
 - 리워드를 받아 처리하는 페이지의 **타임아웃 시간은 최대 10초**입니다.
 
 ## 5. 리워드 조회
@@ -183,7 +183,7 @@ curl http://api.linkprice.com/affiliate/translist.php?a_id=yourAffiliateId&auth_
 | user_id       |varchar(560)      | 매체 사용자 정보<br/>(click 주소를 통해 u_id로 전달 된 값)   |
 | membership_id |varchar(100)      | 머천트의 주문자 정보                                         |
 | remote_addr   |varchar(100)      | 사용자 PC 주소                                               |
-| status        |varchar(3)      | 주문상태<br/>100 (처리중) <br/>300(처리중) <br/>310(취소완료) /<br/>200(처리중)<br/>210(정산완료) <br/>220(정산완료) |
+| status        |varchar(3)      | 주문상태<br/>100 : 일반 (실적 생성시) <br/>210 : 정상확정 <br/>300 : 취소신청 /<br/>310 : 취소확정 |
 | trans_comment |varchar(1000)      | 실적 취소 사유     
 
 ## 7. <a name="confirm">정산 실적 처리 방벙</a>
