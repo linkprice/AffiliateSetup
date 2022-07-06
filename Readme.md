@@ -186,7 +186,7 @@ curl http://api.linkprice.com/affiliate/translist.php?a_id=yourAffiliateId&auth_
 | status        |varchar(3)      | 주문상태<br/>100 : 일반 (실적 생성시) <br/>210 : 정상확정 <br/>300 : 취소신청 <br/>310 : 취소확정 |
 | trans_comment |varchar(1000)      | 실적 취소 사유     
 
-## 7. <a name="confirm">정산 실적 처리 방벙</a>
+## 7. <a name="confirm">정산 실적 처리 방법</a>
 
 * 매월 6일 어필 정산완료 후 실적 조회 API를 사용하여 확정 / 취소 실적을 확인 할 수 있습니다.
 * 저장된 리워드 실적(6, 9번에서 전송된)과 조회된 정산 실적(11번)의 머천트 아이디, 주문 번호, 상품코드가 같은 데이터를 찾은 후 주문 상태에 따라 업데이트 하여 줍니다.
