@@ -184,7 +184,11 @@ curl http://api.linkprice.com/affiliate/translist.php?a_id=yourAffiliateId&auth_
 | membership_id |varchar(100)      | 머천트의 주문자 정보                                         |
 | remote_addr   |varchar(100)      | 사용자 PC 주소                                               |
 | status        |varchar(3)      | 주문상태<br/>100 : 일반 (실적 생성시) <br/>210 : 정상확정 <br/>300 : 취소신청 <br/>310 : 취소확정 |
-| trans_comment |varchar(1000)      | 실적 취소 사유     
+| create_time_stamp |datetime      | 실제 실적 인입 시간     
+| applied_pgm_id |varchar(4)      | 링크프라이스 프로그램 코드   
+| pgm_name |varchar(100)      | 링크프라이스 프로그램 이름     
+| is_pc |enum      | 실적 디바이스 타입 (일반:pc, 모바일웹:mobile, 앱:app, 아이폰:ios, 안드로이드: android)  
+| pur_rate |varchar(20)      | 커미션 적립율 혹은 적립금액 (EX: "1,000원" or "5%")    
 
 ## 7. <a name="confirm">정산 실적 처리 방법</a>
 
