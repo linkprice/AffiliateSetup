@@ -181,8 +181,6 @@ curl http://api.linkprice.com/affiliate/translist.php?a_id=yourAffiliateId&auth_
 | sales         |double      | 판매 합계금액 (KRW)                                               |
 | commission    |double      | 매체에 지급하는 커미션 (KRW)                                                  |
 | user_id       |varchar(560)      | 매체 사용자 정보<br/>(click 주소를 통해 u_id로 전달 된 값)   |
-| membership_id |varchar(100)      | 머천트의 주문자 정보                                         |
-| remote_addr   |varchar(100)      | 사용자 PC 주소                                               |
 | status        |varchar(3)      | 주문상태<br/>100 : 일반 (실적 생성시) <br/>210 : 정상확정 <br/>300 : 취소신청 <br/>310 : 취소확정 |
 | create_time_stamp |datetime      | 실제 실적 인입 시간     
 | applied_pgm_id |varchar(4)      | 링크프라이스 프로그램 코드   
