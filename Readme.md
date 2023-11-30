@@ -2,7 +2,7 @@
 
 
 
-## 1. [리워드 API](https://github.com/linkprice/AffiliateSetup/blob/api_separation/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md)
+## 1. [리워드 API](https://github.com/linkprice/AffiliateSetup/blob/master/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md)
 
 * 링크프라이스에서 실적이 발생되면 AC > 툴박스 > 리워드API에 설정해놓으신 POSTBACK URL로 실적 정보를 전송해드리는 기능입니다.
 * 주로 실시간으로 즉시 포인트 내역을 적립해야 하는 캐시백 기능이 있는 사이트에서 이용하는 기능입니다.
