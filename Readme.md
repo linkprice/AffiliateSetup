@@ -1,6 +1,6 @@
 #### 어필리에이트 서비스를 돕기위해 링크프라이스에서 제공하는 API 가이드입니다.
 
-![](https://raw.githubusercontent.com/linkprice/AffiliateSetup/master/reward_diagram.png)
+![](https://raw.githubusercontent.com/linkprice/AffiliateSetup/edit_request_231211/reward_diagram.jpg)
 
 ## 1. [리워드 API 가이드 페이지 바로가기](https://github.com/linkprice/AffiliateSetup/blob/master/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md)
 
