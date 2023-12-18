@@ -5,10 +5,6 @@
 > 실적 발생 시 어떤 회원의 실적인지 실시간으로 데이터를 받을 수 있습니다.
 > 리워드 데이터를 사용하면 회원들에게 가입/구매를 홍보하고, 실적이 발생하면 해당 회원에게 보상해 줄 수 있기 때문에 캐시백 또는 리워드 서비스를 운영하는 어필리에이트에 적합합니다.
 
-![](https://raw.githubusercontent.com/linkprice/AffiliateSetup/master/reward_diagram.png)
-
-
-
 1. 배너클릭
 2. 클릭 링크에 어필리에이트 회원구분을 위한 u_id를 함께 전송하여 링크프라이스 click 서비스로 이동[(3. u_id를 click과 연동하는 방법 참조)](#uid)
 3. click 서비스에서 어필리에이트 정보와 함께 머천트 상품 페이지로 이동
@@ -18,13 +14,12 @@
    * 리워드 전송은 AC 리워드 API 승인 후 사용 가능[(4. 리워드 승인 신청 참조)](#rewardJoin)
    * 링크프라이스로부터 리워드 데이터를 받아 처리할 페이지 작성 및 등록[(4. 리워드 승인 신청 참조)](#rewardJoin)
    * 머천트에 따라 리워드 전송 시기 및 금액이 실적 정보와 다를수 있습니다.[(2. 리워드 주의사항 참조)](#warning)
-7. 매달 1번 링크프라이스에서 머천트측으로 정산 요청
+7. 매달 한 번 링크프라이스에서 머천트측으로 정산 요청
 8. 실적 확정 및 취소
-9. 머천트 정산 방식에 따라 일부 실적 리워드 전송[(2. 리워드 주의사항 참조)](#warning)
-10. 실적 조회 API를 통하여 링크프라이스측으로 실적 조회 요청[(실적조회 API로 이동)](https://github.com/linkprice/AffiliateSetup/blob/master/docs/%EC%8B%A4%EC%A0%81_%EC%A1%B0%ED%9A%8C_%EC%98%A4%ED%94%88_API_v1.6.md)
-11. 링크프라이스는 요청받은 실적 데이터 정보를 제공
-12. 응답받은 데이터를 통해 실적의 확정 또는 취소를 확인
-13. 리워드 확정
+9. 실적 조회 API를 통하여 링크프라이스측으로 실적 조회 요청[(실적조회 API로 이동)](https://github.com/linkprice/AffiliateSetup/blob/master/docs/%EC%8B%A4%EC%A0%81_%EC%A1%B0%ED%9A%8C_%EC%98%A4%ED%94%88_API_v1.6.md)
+10. 링크프라이스는 요청받은 실적 데이터 정보를 제공
+11. 응답받은 데이터를 통해 실적의 확정 또는 취소를 확인
+12. 리워드 확정
 
 
 
@@ -44,7 +39,7 @@
 - 하나의 주문은 링크프라이스를 통해 리워드를 받은 이후에, 정산 과정에서 
     - 주문 하나의 전체 실적이 취소되거나 또는 일부 실적이 취소 될 수 있습니다.
     - 실시간 실적 전송시의 같은 주문번호로 새로운 마이너스 실적이 생길 수 있습니다.
-    - 머천트 정산 방식에 따라 실시간 실전 전송시의 금액과 정산 이후의 금액이 달라질 수 있습니다.
+    - 머천트 정산 방식에 따라 실시간 실적 전송시의 금액과 정산 이후의 금액이 달라질 수 있습니다.
     - 머천트 정산 날짜는 머천트에 따라 상이합니다.
     - 특히 여행 사이트의 경우에는 실시간 실적은 정산시 일단 전부 취소됩니다. 이후 체크아웃 날짜 기준으로 실제 정산이 되어 , 구매 후 1년 후에 정산이 될 수도 있습니다.
 
@@ -70,7 +65,7 @@
 
     ![](https://raw.githubusercontent.com/linkprice/AffiliateSetup/master/reward_request.png)
 
-- 실적 발생 시 머천트에서 링크프라이스로 실적을 보내주면, 링크프라이스에서 어필리에이트로 리워드 데이터를 전송합니다. 링크프라이스가 전송한 데이터를 받아 처리할 페이지를 개발 되어야 하며, 그 주소를 리워드 승인 후 리워드 API 받을 주소에 저장하셔야 합니다.
+- 실적 발생 시 머천트에서 링크프라이스로 실적을 보내주면, 링크프라이스에서 어필리에이트로 리워드 데이터를 전송합니다. 링크프라이스가 전송한 데이터를 받아 처리할 페이지를 개발해야 하며, 그 주소를 리워드 승인 후 리워드 API 받을 주소에 저장하셔야 합니다.
 
     ![](https://raw.githubusercontent.com/linkprice/AffiliateSetup/master/reward_url.png)
 
@@ -78,7 +73,52 @@
 
 
 
-## 5. 리워드 조회
+
+## 5. 리워드 전송 데이터
+###### 실적 발생시 등록된 리워드 주소 전송되는 데이터 명세입니다.
+|     파라미터 값      |  타입   | 길이 | 설명                                                         |
+| :------------------: | :-----: | :--: | :----------------------------------------------------------- |
+|         day          | VARCHAR |  8   | 실적발생 날짜                                                |
+|         time         | VARCHAR |  6   | 실적발생 시간                                                |
+|     merchant_id      | VARCHAR |  10  | 머천트 ID                                                    |
+|      order_code      | VARCHAR | 100  | 주문 코드                                                    |
+|     product_code     | VARCHAR | 100  | 제품 코드                                                    |
+|     product_name     | VARCHAR | 300  | 제품명<br />* 해당 값의 캐릭터셋은 UTF-8이고 URL ENCODING 처리를 합니다. |
+|    category_code     | VARCHAR | 200  | 카테고리 코드                                                |
+|      item_count      |   INT   |  11  | 개수                                                         |
+|        price         |  FLOAT  |  -   | 실적 총 금액                                                 |
+|      commision       |  FLOAT  |  -   | 커미션                                                       |
+|     affiliate_id     | VARCHAR |  10  | 링크프라이스 어필레이트 아이디                               |
+|  affiliate_user_id   | VARCHAR | 560  | 리워드 아이디<br />* click.linkprice.com 유입 URL의 "u_id" 값을 전송합니다. |
+|       trlog_id       |   INT   |  11  | 실적 ID                                                      |
+|   base_commission    | VARCHAR |  20  | 기본 커미션. 커미션의 형태에 따라 % 혹은 KRW(원화)로 전송합니다. |
+| incentive_commission | VARCHAR |  20  | 인센티브 커미션. 추가적으로 지급받는 커미션을 의미합니다.<br /> 커미션의 형태에 따라 % 혹은 KRW(원화)로 전송합니다. |
+
+###### 실적 발생시 전송되는 리워드 데이터 예
+```json
+POST
+{
+    "day": "20200701",
+    "time": "112719",
+    "merchant_id": "linkprice",
+    "order_code": "oc11123",
+    "product_code": "pc11123",
+    "product_name" : "test product",
+    "category_code": "cc11",
+    "item_count": 1,
+    "price": 20000,
+    "commision": 500,
+    "affiliate_id": "A100000000",
+    "affiliate_user_id": "ac_aaa",
+    "trlog_id" : 1000232321232,
+    "base_commission" : "8%",
+    "incentive_commission" : "500KRW"
+}
+```
+
+
+
+## 6. 리워드 조회
 
 - **AC > 어필리에이트 > 툴박스 > 리워드 API** 하단 로그정보 조회 클릭
 
