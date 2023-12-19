@@ -12,9 +12,9 @@
 4. 어필리에이트 회원이 머천트 상품 구매시 실적 발생
 5. 머천트는 어필리에이트 정보 확인 후, 발생한 실적 데이터를 링크프라이스로 전송
 6. 링크프라이스에서 어필리에이트에게 발생한 실적의 리워드 데이터 전송
-    * 리워드 전송은 AC 리워드 API 승인 후 사용 가능 [(리워드 API - 리워드 승인 신청으로 이동)](https://github.com/linkprice/AffiliateSetup/blob/edit_request_231211/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md#4-%EB%A6%AC%EC%9B%8C%EB%93%9C-%EC%8A%B9%EC%9D%B8-%EC%8B%A0%EC%B2%AD)
+    * 리워드 전송은 AC 리워드 API 승인 후 사용 가능 [(리워드 API - 리워드 승인 신청으로 이동)](https://github.com/linkprice/AffiliateSetup/blob/edit_request_231211/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md#rewardJoin)
     * 링크프라이스로부터 리워드 데이터를 받아 처리할 페이지 작성 및 등록
-    * 머천트에 따라 리워드 전송 시기 및 금액이 실적 정보와 다를수 있습니다. [(리워드 API - 리워드 주의사항으로 이동)](https://github.com/linkprice/AffiliateSetup/blob/edit_request_231211/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md#2-%EB%A6%AC%EC%9B%8C%EB%93%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD)
+    * 머천트에 따라 리워드 전송 시기 및 금액이 실적 정보와 다를수 있습니다. [(리워드 API - 리워드 주의사항으로 이동)](https://github.com/linkprice/AffiliateSetup/blob/edit_request_231211/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md#warning)
 7. 매달 한 번 링크프라이스에서 머천트측으로 정산 요청
 8. 실적 확정 및 취소
 9. 실적 조회 API를 통하여 링크프라이스측으로 실적 조회 요청 [(실적조회 API로 이동)](https://github.com/linkprice/AffiliateSetup/blob/master/docs/%EC%8B%A4%EC%A0%81_%EC%A1%B0%ED%9A%8C_%EC%98%A4%ED%94%88_API_v1.6.md)
