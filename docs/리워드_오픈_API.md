@@ -57,23 +57,23 @@
 - 링크프라이스에서 실적이 발생되는 시점에 리워드 API 받을 주소로 실적을 전송합니다.
 - 실적 데이터는 POST방식으로 전송되며 데이터 형식은 JSON 입니다.(server to server 방식)
 
-|     파라미터 값      |  타입   | 길이 | 설명                                                         |
-| :------------------: | :-----: | :--: | :----------------------------------------------------------- |
-|         day          | VARCHAR |  8   | 실적발생 날짜                                                |
-|         time         | VARCHAR |  6   | 실적발생 시간                                                |
-|     merchant_id      | VARCHAR |  10  | 머천트 ID                                                    |
-|      order_code      | VARCHAR | 100  | 주문 코드                                                    |
-|     product_code     | VARCHAR | 100  | 제품 코드                                                    |
-|     product_name     | VARCHAR | 300  | 제품명<br />* 해당 값의 캐릭터셋은 UTF-8이고 URL ENCODING 처리를 합니다. |
-|    category_code     | VARCHAR | 200  | 카테고리 코드                                                |
-|      item_count      |   INT   |  11  | 개수                                                         |
-|        price         |  FLOAT  |  -   | 실적 총 금액                                                 |
-|      commision       |  FLOAT  |  -   | 커미션                                                       |
-|     affiliate_id     | VARCHAR |  10  | 링크프라이스 어필레이트 아이디                               |
-|  affiliate_user_id   | VARCHAR | 560  | 리워드 아이디<br />* click.linkprice.com 유입 URL의 "u_id" 값을 전송합니다. |
-|       trlog_id       |   INT   |  11  | 실적 ID                                                      |
-|   base_commission    | VARCHAR |  20  | 기본 커미션. 커미션의 형태에 따라 % 혹은 KRW(원화)로 전송합니다. |
-| incentive_commission | VARCHAR |  20  | 인센티브 커미션. 추가적으로 지급받는 커미션을 의미합니다.<br /> 커미션의 형태에 따라 % 혹은 KRW(원화)로 전송합니다. |
+|     파라미터 값      |   타입    | 길이  | 설명                                                         |
+| :------------------: |:-------:|:---:| :----------------------------------------------------------- |
+|         day          | VARCHAR |  8  | 실적발생 날짜                                                |
+|         time         | VARCHAR |  6  | 실적발생 시간                                                |
+|     merchant_id      | VARCHAR | 10  | 머천트 ID                                                    |
+|      order_code      | VARCHAR | 100 | 주문 코드                                                    |
+|     product_code     | VARCHAR | 100 | 제품 코드                                                    |
+|     product_name     | VARCHAR | 300 | 제품명<br />* 해당 값의 캐릭터셋은 UTF-8이고 URL ENCODING 처리를 합니다. |
+|    category_code     | VARCHAR | 200 | 카테고리 코드                                                |
+|      item_count      |   INT   | 11  | 개수                                                         |
+|        price         |  FLOAT  |  -  | 실적 총 금액                                                 |
+|      commision       |   INT   | 11  | 커미션                                                       |
+|     affiliate_id     | VARCHAR | 10  | 링크프라이스 어필레이트 아이디                               |
+|  affiliate_user_id   | VARCHAR | 560 | 리워드 아이디<br />* click.linkprice.com 유입 URL의 "u_id" 값을 전송합니다. |
+|       trlog_id       |   INT   | 14  | 실적 ID                                                      |
+|   base_commission    | VARCHAR | 20  | 기본 커미션. 커미션의 형태에 따라 % 혹은 KRW(원화)로 전송합니다. |
+| incentive_commission | VARCHAR | 20  | 인센티브 커미션. 추가적으로 지급받는 커미션을 의미합니다.<br /> 커미션의 형태에 따라 % 혹은 KRW(원화)로 전송합니다. |
 
 ###### 실적 발생시 전송되는 리워드 데이터 예
 ```json
@@ -91,7 +91,7 @@ POST
     "commision": 500,
     "affiliate_id": "A100000000",
     "affiliate_user_id": "ac_aaa",
-    "trlog_id" : 1000232321232,
+    "trlog_id" : 10000536080255,
     "base_commission" : "8%",
     "incentive_commission" : "500KRW"
 }
