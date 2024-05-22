@@ -115,11 +115,11 @@ http://api.linkprice.com/ci/service/all_merchant/A100000131/apr/cps/detail
 
 | 키                          | 값                         | 타입    |
 | --------------------------- | -------------------------- | ------- |
-| when_trans                  | 실적발생 날짜              | TEXT    |
+| when_trans                  | 최초 실적 전송              | TEXT    |
 | trans_reposition            | 정산 방식                  | TEXT    |
-| commission_payment_standard | 지급 방식                  | TEXT    |
+| commission_payment_standard | 커미션 지급 일정                  | TEXT    |
 | deny_product                | 커미션 미인정 상품         | TEXT    |
 | deny_ad                     | 활동 불가 방식             | TEXT    |
 | notice                      | 유의사항                   | TEXT    |
-| app_ios_yn                  | 실적인정범위 유무(iOS)     | CHAR(1) |
-| app_android_yn              | 실적인정범위 유무(Android) | CHAR(1) |
+| app_ios_yn                  | 실적 인정 유무(iOS)     | CHAR(1) |
+| app_android_yn              | 실적 인정 유무(Android) | CHAR(1) |
