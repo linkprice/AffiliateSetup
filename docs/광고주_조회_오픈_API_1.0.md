@@ -29,20 +29,20 @@ http://api.linkprice.com/ci/service/all_merchant/A100000131/apr/cpa
 ```json
 [
   {
-    category_id: "3",
-    category_name: "패션",
-    deeplink_yn: "Y",
-    max_commission_mobile: "2%",
-    max_commission_pc: "2000원",
-    merchant_id: "wizwid",
-    merchant_logo: "http://img.wizwid.com/WIZWID/RAW-DOC2/pc/mkt-2019-raink/logo.jpg",
-    merchant_name: "위즈위드",
-    merchant_url: "http://www.wizwid.com/CSW/handler/wizwid/kr/MainView-MainView",
-    mobile_yn: "Y",
-    return_day: 7,
-    reward_yn: "Y",
-    subscript: "APR",
-    click_url: "http://click.linkprice.com/click.php?m=wizwid&a=A100000131&l=0000&l_cd1=B&l_cd2=1"
+    "category_id": "3",
+    "category_name": "패션",
+    "deeplink_yn": "Y",
+    "max_commission_mobile": "2%",
+    "max_commission_pc": "2000원",
+    "merchant_id": "wizwid",
+    "merchant_logo": "http://img.wizwid.com/WIZWID/RAW-DOC2/pc/mkt-2019-raink/logo.jpg",
+    "merchant_name": "위즈위드",
+    "merchant_url": "http://www.wizwid.com/CSW/handler/wizwid/kr/MainView-MainView",
+    "mobile_yn": "Y",
+    "return_day": 7,
+    "reward_yn": "Y",
+    "subscript": "APR",
+    "click_url": "http://click.linkprice.com/click.php?m=wizwid&a=A100000131&l=0000&l_cd1=B&l_cd2=1"
   }
 ]
 ```
@@ -59,23 +59,23 @@ http://api.linkprice.com/ci/service/all_merchant/A100000131/apr/cps/detail
 
 ### 추가 정보 응답 샘플
 
-```json
+```
 [
   {
-    category_id: "3",
-    category_name: "패션",
-    deeplink_yn: "Y",
-    max_commission_mobile: "2%",
-    max_commission_pc: "2000원",
-    merchant_id: "wizwid",
-    merchant_logo: "http://img.wizwid.com/WIZWID/RAW-DOC2/pc/mkt-2019-raink/logo.jpg",
-    merchant_name: "위즈위드",
-    merchant_url: "http://www.wizwid.com/CSW/handler/wizwid/kr/MainView-MainView",
-    mobile_yn: "Y",
-    return_day: 7,
-    reward_yn: "Y",
-    subscript: "APR",
-    click_url: "http://click.linkprice.com/click.php?m=wizwid&a=A100000131&l=0000&l_cd1=B&l_cd2=1",
+    "category_id": "3",
+    "category_name": "패션",
+    "deeplink_yn": "Y",
+    "max_commission_mobile": "2%",
+    "max_commission_pc": "2000원",
+    "merchant_id": "wizwid",
+    "merchant_logo": "http://img.wizwid.com/WIZWID/RAW-DOC2/pc/mkt-2019-raink/logo.jpg",
+    "merchant_name": "위즈위드",
+    "merchant_url": "http://www.wizwid.com/CSW/handler/wizwid/kr/MainView-MainView",
+    "mobile_yn": "Y",
+    "return_day": 7,
+    "reward_yn": "Y",
+    "subscript": "APR",
+    "click_url": "http://click.linkprice.com/click.php?m=wizwid&a=A100000131&l=0000&l_cd1=B&l_cd2=1",
     "when_trans": "실시간 실적 전송",
     "trans_reposition": "전체 실적 중 확정 건 제외한 실적 취소",
     "commission_payment_standard": "구매 월 기준 익익월 6일 지급",
