@@ -59,7 +59,7 @@ http://api.linkprice.com/ci/service/all_merchant/A100000131/apr/cps/detail
 
 ### 추가 정보 응답 샘플
 
-```
+```json
 [
   {
     "category_id": "3",
