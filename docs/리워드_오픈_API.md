@@ -1,6 +1,6 @@
 # 리워드 API
 
-## 1. 리워드 이용방법<a name="use"></a>
+## 1. 리워드 이용방법
 1. **Affiliate Center > 어필리에이트 > 툴박스 > 리워드 API**에서 승인 신청을 한 뒤, 링크프라이스에서 승인하면 사용이 가능합니다.
    ![](https://raw.githubusercontent.com/linkprice/AffiliateSetup/master/reward_request.png)
   
