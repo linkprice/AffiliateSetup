@@ -51,12 +51,12 @@ POST
     "category_code": "cc11",
     "item_count": 1,
     "price": 20000,
-    "commision": 500,
+    "commision": 1800,
     "affiliate_id": "A100000000",
     "affiliate_user_id": "ac_aaa",
     "trlog_id" : 10000536080255,
     "base_commission" : "8%",
-    "incentive_commission" : "500KRW"
+    "incentive_commission" : "1%"
 }
 ```
 
