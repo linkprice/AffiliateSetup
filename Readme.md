@@ -10,15 +10,15 @@
 > **※ 본문 하단 주의사항을 필히 읽어보시기 바랍니다.**
 
 #### 리워드 서비스는 다음과 같은 흐름으로 운영됩니다.
-![](https://raw.githubusercontent.com/linkprice/AffiliateSetup/guide_renewal/reward_diagram_240701.jpg)
+![](https://raw.githubusercontent.com/linkprice/AffiliateSetup/master/reward_diagram_240701.jpg)
 
 1. 어필리에이트의 제휴 링크를 회원이 클릭합니다.
-2. 어필리에이트는 제휴 링크에 리워드 지급을 위한 회원 구분 값(u_id)을 추가하여 링크프라이스 클릭 서비스로 전달합니다. [[리워드 API - u_id를 제휴 링크와 연동하는 방법]](https://github.com/linkprice/AffiliateSetup/blob/guide_renewal/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md#1-%EB%A6%AC%EC%9B%8C%EB%93%9C-%EC%9D%B4%EC%9A%A9%EB%B0%A9%EB%B2%95)
+2. 어필리에이트는 제휴 링크에 리워드 지급을 위한 회원 구분 값(u_id)을 추가하여 링크프라이스 클릭 서비스로 전달합니다. [[리워드 API - u_id를 제휴 링크와 연동하는 방법]](https://github.com/linkprice/AffiliateSetup/blob/master/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md#1-%EB%A6%AC%EC%9B%8C%EB%93%9C-%EC%9D%B4%EC%9A%A9%EB%B0%A9%EB%B2%95)
 3. 실적 추적 및 성과 분석을 위해 링크프라이스 제휴 링크 파라미터들은 머천트 웹사이트에 트래킹 쿠키로 저장됩니다. 그다음 머천트 웹사이트로 이동됩니다.
 4. 어필리에이트 회원이 머천트의 제품을 구매하여 실적을 발생시킵니다.
 5. 머천트는 전달받은 어필리에이트 정보와 구매 정보를 링크프라이스에게 전송합니다.
 6. 링크프라이스는 머천트에게 받은 정보를 적재 후 어필리에이트에게 리워드 데이터로 전송합니다.
-    * Affiliate Center에서 리워드 API 신청 후 승인된 어필리에이트에게만 리워드 데이터를 전송해 드립니다. [[리워드 API - 리워드 승인 신청]](https://github.com/linkprice/AffiliateSetup/blob/guide_renewal/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md#1-%EB%A6%AC%EC%9B%8C%EB%93%9C-%EC%9D%B4%EC%9A%A9%EB%B0%A9%EB%B2%95)
+    * Affiliate Center에서 리워드 API 신청 후 승인된 어필리에이트에게만 리워드 데이터를 전송해 드립니다. [[리워드 API - 리워드 승인 신청]](https://github.com/linkprice/AffiliateSetup/blob/master/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md#1-%EB%A6%AC%EC%9B%8C%EB%93%9C-%EC%9D%B4%EC%9A%A9%EB%B0%A9%EB%B2%95)
 7. 링크프라이스는 매달 머천트에게 정산에 필요한 데이터를 요청합니다.
 8. 머천트는 실적의 확정 또는 취소 정보를 링크프라이스에게 전달하고, 링크프라이스는 받은 정보로 실적을 확정하거나 취소합니다.
     * 매월 20일부터 익월 5일까지 진행되는 머천트 정산은 머천트에서 발생한 실적과 링크프라이스에 적재된 실적이 일치하는지 검증하고 발생한 실적에 대한 광고비 지급을 확정하는 단계입니다. 해당 단계를 통해 구매 취소된 실적 등 머천트 기준에 부합하지 않는 실적들이 취소되며 일부 머천트는 머천트 기준에 따라 커미션 조정됩니다(커미션 세분화, 부가세 제외 등).
@@ -27,11 +27,11 @@
 11. 어필리에이트는 실적 조회 API를 통해 받은 데이터로 실적의 확정 및 취소를 확인합니다.
 12. 실적이 확정된 회원에게 포인트나 적립금 등의 보상을 지급합니다.
 
-## 2. 리워드 API [바로 가기](https://github.com/linkprice/AffiliateSetup/blob/guide_renewal/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md)
+## 2. 리워드 API [바로 가기](https://github.com/linkprice/AffiliateSetup/blob/master/docs/%EB%A6%AC%EC%9B%8C%EB%93%9C_%EC%98%A4%ED%94%88_API.md)
 * 실적 발생 시 Affiliate Center > 어필리에이트 > 툴박스 > 리워드 API에 설정된 POSTBACK URL로 발생한 실적 정보를 전송해 드리는 기능입니다.
 * 주로 적립 예정 내역을 제공하는 리워드 서비스를 운영하는 어필리에이트에서 이용하는 기능입니다.
 
-## 3. 실적 조회 API [바로 가기](https://github.com/linkprice/AffiliateSetup/blob/guide_renewal/docs/%EC%8B%A4%EC%A0%81_%EC%A1%B0%ED%9A%8C_%EC%98%A4%ED%94%88_API_v1.6.md)
+## 3. 실적 조회 API [바로 가기](https://github.com/linkprice/AffiliateSetup/blob/master/docs/%EC%8B%A4%EC%A0%81_%EC%A1%B0%ED%9A%8C_%EC%98%A4%ED%94%88_API_v1.6.md)
 * 어필리에이트의 실적 데이터를 월별, 일별 단위로 조회할 수 있는 API입니다.
 * 제공되는 데이터에는 실적의 확정 여부를 알 수 있는 상태 값이 존재하기 때문에 주로 리워드 적립 확정 / 취소 시 사용됩니다.
 
