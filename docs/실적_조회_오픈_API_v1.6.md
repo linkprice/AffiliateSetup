@@ -2,7 +2,7 @@
 
 본 문서는 어필리에이트의 리워드 서비스를 위해 링크프라이스에서 제공하는 실적 조회 API 사용 가이드입니다. 기간 내 발생한 실적 정보를 조회하고 해당 실적의 상태를 확인할 수 있습니다. 인증키의 발급은 링크프라이스 어필리에이트 담당자에게 문의 부탁드립니다. 
 
-<b>문의 : [[고객센터]](https://www.linkprice.com/link/views/about_us/contact_us_detail.html?cat_id=1)</b> 
+<b>문의 : [[고객센터]](https://www.linkprice.com/affiliate/views/about_us/contact_us_detail.html?cat_id=1)</b>
 
 
 
