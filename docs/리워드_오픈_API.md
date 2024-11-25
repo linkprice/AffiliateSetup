@@ -12,10 +12,11 @@
 
 3. 리워드 데이터를 받았을 때 회원을 식별하기 위해 제휴 링크에 회원 식별 값(u_id)를 추가해야 합니다.
    - 최대 500byte까지 전달 가능합니다.
+   - 특수문자를 제외한 영문, 숫자 사용을 권장드립니다.
    - 반드시 URL ENCODING 해야 합니다.
    - 예) 회원 식별 값(u_id)이 'exampleId101' 일 때
      ```html
-         https://click.linkprice.com/click.php?m=gmarket&a=A100000131&l=0000&u_id=exampleId101
+     https://click.linkprice.com/click.php?m=gmarket&a=A100000131&l=0000&u_id=exampleId101
      ```
 ## 2. 리워드 전송 데이터
 - 실적 데이터는 POST방식으로 전송되며 데이터 형식은 JSON 입니다.(server to server 방식)
