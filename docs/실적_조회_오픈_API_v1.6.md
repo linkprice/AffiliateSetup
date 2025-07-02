@@ -51,9 +51,9 @@
 | cancel\_flag | VARCHAR |   1    |    옵션    | 취소 주문 조회<br>Y : 취소 실적 조회<br>N : 취소 외 실적 조회                                                                                             |
 |   currency   | VARCHAR |   3    |    옵션    | ISO 4217 통화 코드<sup>[[1]](#currency_list)</sup> 기본값 KRW<br>판매 합계금액, 어필 커미션 항목을 구매일 기준 환율을 반영하여 <br />요청된 통화로 변환 ※ 지원되는 통화 목록은 문서 최하단 참조 |
 | merchant\_id | VARCHAR |   10   |    옵션    | 해당 머천트 ID의 실적만 조회                                                                                                                      |
-|     page     |   INT   |   11   |    옵션    | 페이지 번호 (Paging 처리)                                                                                                                     |
-|  per\_page   |   INT   |   11   |    옵션    | 페이지당 데이터 (Paging 처리, 기본값 1000)<br>페이지당 몇 건의 정보를 취득할 것인지 지정합니다.                                                                         |
-|     test     | varchar |   1    |    옵션    | 테스트 주문 조회 <br> Y : Response 결과 확인을 위한 테스트 실적 10개 조회                                                                                    |
+|     page     |   INT   |   10   |    옵션    | 페이지 번호 (Paging 처리)                                                                                                                     |
+|  per\_page   |   INT   |   10   |    옵션    | 페이지당 데이터 (Paging 처리, 기본값 1000)<br>페이지당 몇 건의 정보를 취득할 것인지 지정합니다.                                                                         |
+|     test     | VARCHAR |   1    |    옵션    | 테스트 주문 조회 <br> Y : Response 결과 확인을 위한 테스트 실적 10개 조회                                                                                    |
 
 
 
@@ -66,7 +66,7 @@
 |  **항목**  | **타입** | **길이** | **설명**                                 |
 | :--------: | :------: | :------: |----------------------------------------|
 |   result   | VARCHAR  |    3     | 결과 코드<sup>[[2]](#result_code)</sup>    |
-| list_count |   INT    |    11    | 검색된 전체 실적 수<br>※ page 사용 시에도 전체 건수 리턴  |
+| list_count |   INT    |    10    | 검색된 전체 실적 수<br>※ page 사용 시에도 전체 건수 리턴  |
 | order_list |  ARRAY   |    -     | 검색된 데이터 배열<br>※ 검색된 데이터가 없을 경우 빈 배열 리턴 |
 
 
@@ -89,8 +89,8 @@
 |      yyyymmdd       | VARCHAR  |                   8                   | 주문 일자                                                            |
 |       hhmiss        | VARCHAR  |                   6                   | 주문 시간                                                            |
 |   trans\_comment    | VARCHAR  |                 1000                  | 실적 취소 사유(값이 있을 경우에만)                                             |
-|        sales        |   INT    |                  11                   | 판매 합계금액 (기본값 KRW)                                                |
-|     commission      |   INT    |                  11                   | 어필 커미션 (기본값 KRW)                                                 |
+|        sales        | DOUBLE  |                  17                   | 판매 합계금액 (기본값 KRW)                                                |
+|     commission      |   INT   |                  10                   | 어필 커미션 (기본값 KRW)                                                 |
 |      pgm_name       | VARCHAR  |                  100                  | 적용된 머천트 프로그램명                                                    |
 |        is_pc        |   ENUM   | mobile \| pc \| app \| ios \| android | 매체 사용자가 접속한 플랫폼 구분                                               |
 |      pur_rate       | VARCHAR  |                   -                   | 적용된 머천트 프로그램의 건당 커미션 금액 또는 구매액의 커미션 비율. 예) 1000원 또는 0.5%         |
