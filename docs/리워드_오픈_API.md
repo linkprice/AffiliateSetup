@@ -30,12 +30,12 @@
 |     product_code     | VARCHAR | 100 | 제품 코드                                                      |
 |     product_name     | VARCHAR | 300 | 제품명<br />* 해당 값의 캐릭터 셋은 UTF-8이고 URL ENCODING 처리를 합니다.      |
 |    category_code     | VARCHAR | 200 | 카테고리 코드                                                    |
-|      item_count      |   INT   | 11  | 개수                                                         |
-|        price         |  FLOAT  |  -  | 실적 총 금액(KRW)                                               |
-|      commision       |   INT   | 11  | 커미션 금액(KRW)                                                |
-|     affiliate_id     | VARCHAR | 10  | 링크프라이스 어필레이트 아이디                                           |
-|  affiliate_user_id   | VARCHAR | 560 | 어필리에이트 회원 식별값, 어필리에이트에서 제휴 링크를 통해 전달한 u_id 값입니다.           |
-|       trlog_id       |   INT   | 14  | 실적 ID                                                      |
+|      item_count      |   INT   | 10  | 개수                                                        |
+|        price         | DOUBLE  | 17  | 실적 총 금액(KRW)                                              |
+|      commision       |   INT   | 10  | 커미션 금액(KRW)                                               |
+|     affiliate_id     | VARCHAR | 10  | 링크프라이스 어필레이트 아이디                                          |
+|  affiliate_user_id   | VARCHAR | 560 | 어필리에이트 회원 식별값, 어필리에이트에서 제휴 링크를 통해 전달한 u_id 값입니다.          |
+|       trlog_id       | BIGINT  | 20  | 실적 ID                                                     |
 |   base_commission    | VARCHAR | 20  | 기본 커미션에 대한 계산 기준. 실적 총금액 비율(%) 또는 개수당 지급되는 금액(KRW)입니다.    |
 | incentive_commission | VARCHAR | 20  | 추가 지급 커미션에 대한 계산 기준. 실적 총금액 비율(%) 또는 개수당 지급되는 금액(KRW)입니다. |
 
